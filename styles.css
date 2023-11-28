@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10px;
+  width: 225px;
+  height: 300px;
+  border: 1px solid #ccc;
+  border-radius: 13px;
+  margin: 50px auto 0 auto;
+  background-color: #00cc9f;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 7px;
+  text-align: right;
+  margin-bottom: 18px;
+  border: none;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.calc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.btnEquals {
+  grid-row: span 3;
+  padding: 3px;
+  font-size: 18px;
+}
+
+.btnNums,
+.btnOp,
+.clear,
+.decimal {
+  padding: 3px;
+  font-size: 18px;
+  height: 50px;
+}
+
+.clear {
+  background-color: crimson;
+  color: white;
+}
+
+button {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 3px 3px rgba(98, 98, 98, 0.2);
+}
